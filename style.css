@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgba(90, 131, 148, 0.638);
+  background-color: #1c41388c;;
   line-height: 1.6;
 }
 
@@ -82,7 +82,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background-color: darkolivegreen;
+     background-color: #1e293b;
     position: sticky;
     top: 0;
 }
@@ -122,4 +122,30 @@ html {
 }
 .dark h1{
   color: rgba(3, 109, 148, 0.39);
+}
+#darkbtn{
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;  
+  margin-right: 100px;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+  }
 }
