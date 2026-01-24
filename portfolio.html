@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shubham's Portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <nav class="navbar">
@@ -16,6 +16,7 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
+            <button id="darkBtn">Dark Mode</button>
         </nav>
 
         <section id="about" class="about">
@@ -82,40 +83,62 @@
             <h2>Projects</h2>
 
             <article>
-                <h3>Portfolio Website</h3>
+                <li><h3>Portfolio Website</h3></li>
                 <p>This portfolio website is designed to highlight my technical
                     skills, projects, and learning journey in web
                     development.</p>
-                <p>Tech: HTML, CSS, JavaScript</p>
+                <b>Tech:</b>
+                <p>HTML, CSS, JavaScript</p>
             </article>
-
             <article>
-                <h3>Todo App</h3>
-                <p>A simple task management app.</p>
+                <li><h3>Music Streaming and Discovery Website</h3></li>
+                <p>Created as a team project using HTML, CSS, and
+                    JavaScript,allowing
+                    users to stream and discover music through a clean and
+                    responsive interface.
+                    The website includes features like personalized playlists,
+                    search functionality,
+                    and smooth music playback.
+                </p>
+                <b>Tools & Technologies:</b>
+                <p>HTML, CSS, JavaScript, VS Code, Git, Github</p>
+            </article>
+            <article>
+                <li><h3>Ride rent – The bike and car rental website </h3></li>
+                <p>Developed as a group project where I worked on creating a
+                    responsive
+                    interface along with the signup/login system and front-end
+                    validation. I
+                    also implemented the light/dark theme toggle and helped
+                    design clean,
+                    user-friendly pages.
+                </p>
+                <b>Tools & Technologies:</b>
+                <p>HTML, CSS, JavaScript, VS Code, Git, Github</p>
             </article>
         </section>
         <section id="contact" class="contact">
             <h2>Contact</h2>
             <p>Email: shubpandeyham@gmail.com </p>
             <p>Phone: +91-8957722541</p>
-            <form class="form">
+            <form class="form" method="get">
                 <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Enter your name">
+                <input id="name" name="name" type="text" placeholder="Enter your name">
                 <br><br>
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
                 <br><br>
-                <textarea id="message" placeholder="Type here..."></textarea>
+                <textarea id="message" name="message" placeholder="Type here..."></textarea>
                 <br>
                 <h2>Select Your gender</h2>
                 Male<input type="radio" name="gender">
                 Female<input type="radio" name="gender">
                 <h2>Select Your Skills</h2>
-                html <input type="radio" name="checkbox">
-                CSS <input type="radio" name="checkbox">
-                JavaScript <input type="radio" name="checkbox">
+                html <input type="checkbox" name="checkbox">
+                CSS <input type="checkbox" name="checkbox">
+                JavaScript <input type="checkbox" name="checkbox">
                 <br>
-                <button>Submit</button>
+                <button type="submit" >Submit</button>
             </form>
         </section>
 

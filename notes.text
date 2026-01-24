@@ -22,3 +22,6 @@ Responsive design
 Hosted link
 
 When all boxes ticked → you’re job-ready junior dev.
+git add .
+git commit -m "Added centered navbar"
+git push

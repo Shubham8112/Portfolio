@@ -105,3 +105,21 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.dark section {
+  background-color: #1e1e1e;
+}
+
+.dark a {
+  color: yellow;
+}
+.dark h2{
+  color: rgb(74, 118, 156);
+}
+.dark h1{
+  color: rgba(3, 109, 148, 0.39);
+}
