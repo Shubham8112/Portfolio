@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(122, 122, 115);
+  background-color: rgba(90, 131, 148, 0.638);
   line-height: 1.6;
 }
 
@@ -76,4 +76,32 @@ button:hover {
     margin-left: 100px;
     margin-bottom: 10px;
     text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: darkolivegreen;
+    position: sticky;
+    top: 0;
+}
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.nav-links{
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    margin: auto;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
 }

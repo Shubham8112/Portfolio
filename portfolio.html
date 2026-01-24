@@ -5,11 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shubham's Portfolio</title>
         <link rel="stylesheet" href="style.css">
-
+        <script src="script.js"></script>
     </head>
     <body>
+        <nav class="navbar">
+            <!-- <h3 class="logo">Shubham</h3> -->
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
 
-        <section class="about">
+        <section id="about" class="about">
             <h2>About Me</h2>
             <img height="200" src="img1.jpg" alt="Photo of Shubham Pandey">
             <h1>Shubham Pandey</h1>
@@ -23,13 +32,14 @@
                 impactful projects.
             </p>
             <div class="social">
-                <a href="https://github.com/Shubham8112" target="_blank">GitHub</a>
+                <a href="https://github.com/Shubham8112"
+                    target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/shubham-pandey8957/"
                     target="_blank">LinkedIn</a>
             </div>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Skills</h2>
 
             <h3>Web Technologies</h3>
@@ -68,7 +78,7 @@
             </table>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2>Projects</h2>
 
             <article>
@@ -84,7 +94,7 @@
                 <p>A simple task management app.</p>
             </article>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact</h2>
             <p>Email: shubpandeyham@gmail.com </p>
             <p>Phone: +91-8957722541</p>
@@ -96,7 +106,7 @@
                 <input type="email" id="email" placeholder="Enter your email">
                 <br><br>
                 <textarea id="message" placeholder="Type here..."></textarea>
-                <br> 
+                <br>
                 <h2>Select Your gender</h2>
                 Male<input type="radio" name="gender">
                 Female<input type="radio" name="gender">
@@ -109,7 +119,8 @@
             </form>
         </section>
 
-        <a href="resume.docx" target="_blank" class="download">Download Resume</a>
+        <a href="resume.docx" target="_blank" class="download">Download
+            Resume</a>
 
     </body>
 </html>
