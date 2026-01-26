@@ -85,6 +85,8 @@ button:hover {
      background-color: #1e293b;
     position: sticky;
     top: 0;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 .nav-links a {
   color: white;
@@ -97,6 +99,7 @@ button:hover {
     align-items: center;
     gap: 150px;
     margin: auto;
+     flex-wrap: wrap;
 }
 
 .nav-links a:hover {
@@ -130,15 +133,17 @@ html {
   margin-right: 100px;
 }
 @media (max-width: 600px) {
-  .navbar {
+   .navbar {
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
+    padding: 10px 20px;   /* reduced */
   }
 
   .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
+    flex-direction: row; /* keep links in one row */
+    flex-wrap: wrap;     /* allow wrap if needed */
+    justify-content: center;
+    gap: 15px;
 
   section {
     padding: 20px;
@@ -148,4 +153,16 @@ html {
   .form textarea {
     width: 100%;
   }
+}
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: #1e293b;
+  color: white;
+  cursor: pointer;
+  display: none; /* hidden by default */
 }

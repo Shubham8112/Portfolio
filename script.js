@@ -53,3 +53,21 @@ const btn = document.getElementById("darkBtn");
 btn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
+const topBtn = document.getElementById("topBtn");
+
+// show button after scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
+
+// go to top on click
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
