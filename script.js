@@ -47,28 +47,28 @@ for(let i=0;i<students.length;i++){
     console.log(`Name: ${students[i].Name}, Age: ${students[i].Age}, Marks: ${students[i].Marks}`);
 }
 // ...........
-// console.log("JS loaded");
+console.log("JS loaded");
 
-// const btn = document.getElementById("darkBtn");
+const btn = document.getElementById("darkBtn");
 
-// btn.addEventListener("click", () => {
-//   document.body.classList.toggle("dark");
-// });
-// const topBtn = document.getElementById("topBtn");
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+const topBtn = document.getElementById("topBtn");
 
-// // show button after scroll
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > 300) {
-//     topBtn.style.display = "block";
-//   } else {
-//     topBtn.style.display = "none";
-//   }
-// });
+// show button after scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
 
-// // go to top on click
-// topBtn.addEventListener("click", () => {
-//   window.scrollTo({
-//     top: 0,
-//     behavior: "smooth"
-//   });
-// });
+// go to top on click
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
