@@ -72,3 +72,26 @@ topBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+const form = document.querySelector('#form');
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const msg = document.querySelector('#message');
+const error = document.querySelector('#error');
+form.addEventListener('submit',(e) =>{
+  e.preventDefault();
+  if(!name.value.trim()){
+    // alert('Name is Required!!');
+    error.innerText = '!!!Name is Required !!!';
+  }
+  else if(name.value.length< 4){
+    error.innerText = '!!!Name should be at least of four letters!!!';
+  }
+  else if(!email.value.trim()){
+    // alert('!!!Email is Required!!!');
+    error.innerText = '!!!Email is Required!!!';
+  }
+  else if(!msg.value.trim()){
+    // alert('!!!You must add message to send it!!!');
+    error.innerText = '!!!You must add message to send it!!!'
+  }
+})

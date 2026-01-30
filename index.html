@@ -8,7 +8,7 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <nav class="navbar">
+        <nav class="navbar" id="nav">
             <!-- <h3 class="logo">Shubham</h3> -->
             <div class="nav-links">
                 <a href="#about">About</a>
@@ -20,7 +20,7 @@
         </nav>
 
         <section id="about" class="about">
-            <h2>About Me</h2>
+            <h2 id="about-me">About Me</h2>
             <img height="200" src="img1.jpg" alt="Photo of Shubham Pandey">
             <h1>Shubham Pandey</h1>
             <p>Aspiring Full Stack Web Developer</p>
@@ -41,9 +41,9 @@
         </section>
 
         <section id="skills" class="skills">
-            <h2>Skills</h2>
+            <h2 class="hello">Skills</h2>
 
-            <h3>Web Technologies</h3>
+            <h3 class="hello">Web Technologies</h3>
             <ol>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -121,7 +121,7 @@
             <h2>Contact</h2>
             <p>Email: shubpandeyham@gmail.com </p>
             <p>Phone: +91-8957722541</p>
-            <form class="form" method="get">
+            <form class="form" id="form" method="get">
                 <label for="name">Name</label>
                 <input id="name" name="name" type="text"
                     placeholder="Enter your name">
@@ -133,14 +133,7 @@
                 <textarea id="message" name="message"
                     placeholder="Type here..."></textarea>
                 <br>
-                <h2>Select Your gender</h2>
-                Male<input type="radio" name="gender">
-                Female<input type="radio" name="gender">
-                <h2>Select Your Skills</h2>
-                html <input type="checkbox" name="checkbox">
-                CSS <input type="checkbox" name="checkbox">
-                JavaScript <input type="checkbox" name="checkbox">
-                <br>
+                <p id="error"></p>
                 <button type="submit">Submit</button>
             </form>
         </section>
