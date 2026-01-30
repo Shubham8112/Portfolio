@@ -77,8 +77,10 @@ const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const msg = document.querySelector('#message');
 const error = document.querySelector('#error');
+const darkbtn = document.querySelector('#darkBtn');
 form.addEventListener('submit',(e) =>{
   e.preventDefault();
+  error.style.color = ""; 
   if(!name.value.trim()){
     // alert('Name is Required!!');
     error.innerText = '!!!Name is Required !!!';
@@ -92,6 +94,17 @@ form.addEventListener('submit',(e) =>{
   }
   else if(!msg.value.trim()){
     // alert('!!!You must add message to send it!!!');
-    error.innerText = '!!!You must add message to send it!!!'
-  }
+    error.innerText = '!!!You must add message to send it!!!';
+  }else {
+  error.style.color = "green";
+  error.innerText = "Form submitted successfully!";
+  form.reset();
+}
 })
+// const headings = document.querySelectorAll('h3');
+
+// darkbtn.addEventListener('click', () => {
+//   headings.forEach(h3 => {
+//     h3.style.color = '#0f1312';
+//   });
+// });

@@ -20,9 +20,12 @@ section {
   border-radius: 10px;
   border: 1px solid black;
 }
+h3{
+   color: #334155;
+}
 
-h1, h2, h3 {
-  color: #333;
+h1, h2 {
+   color: #1e293b;
 }
 
 /* SOCIAL */
@@ -138,12 +141,13 @@ button:hover {
   color: yellow;
 }
 
-.dark h1 {
+.dark h1,.dark h2 {
   color: #5fa8d3;
+  /* color: #1e293b; */
 }
 
-.dark h2 {
-  color: #74c0fc;
+.dark h3 {
+  color: #28996c;
 }
 
 /* DARK BUTTON */
