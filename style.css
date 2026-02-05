@@ -77,7 +77,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(42, 20, 2);
+  background-color: rgb(31, 14, 1);
 }
 
 /* TABLE */
@@ -89,7 +89,7 @@ button:hover {
 /* DOWNLOAD */
 .download {
   display: inline-block;
-  color: rgb(122, 122, 115);
+  color: rgb(104, 104, 99);
   border: 1px solid;
   border-radius: 25px;
   padding: 10px;
