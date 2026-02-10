@@ -80,10 +80,15 @@ button:hover {
   background-color: rgb(31, 14, 1);
 }
 
+table{
+   border: 1px solid black;
+}
 /* TABLE */
 .table td, .table th {
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid black;
+
 }
 
 /* DOWNLOAD */
@@ -211,4 +216,12 @@ html {
 }
 #error{
   color: red;
+}
+.project-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.project-title a{
+  text-decoration: underline;
 }
